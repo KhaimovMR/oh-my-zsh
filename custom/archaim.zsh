@@ -1,0 +1,52 @@
+# You can put files here to add functionality separated per file, which
+# will be ignored by git.
+# Files on the custom/ directory will be automatically loaded by the init
+# script, in alphabetical order.
+
+# For example: add yourself some shortcuts to projects you often work on.
+#
+export EDITOR=/usr/bin/vim
+alias ll='ls -la'
+
+#
+ealias dps='docker ps'
+ealias dpsa='docker ps -a'
+ealias gP='git push'
+ealias gPu='git push -u'
+ealias gPf='git push -f'
+ealias gPt='git push --tags'
+ealias gPtf='git push --tags -f'
+ealias ga='git add'
+ealias gaa='git add --all'
+ealias gc='git commit'
+ealias gca='git commit --amend'
+ealias gch='git checkout'
+ealias gchb='git checkout -b'
+ealias gcam='git commit --amend -m "#CUR"'
+ealias gcm='git commit -m "#CUR"'
+ealias gcp='git cherry-pick -n'
+ealias gchp='git cherry-pick -n'
+ealias gd='git diff'
+ealias gdh='git diff HEAD --cached'
+ealias gl='git log'
+ealias glf='git log --first-parent'
+ealias gln='git log -n'
+ealias glp='git log -p'
+ealias glr='git ls-remote'
+ealias glrt='git ls-remote --tags'
+ealias gls='glsf -n 9#CUR'
+ealias glsfn='glsf -p --name-only'
+ealias glsn='glsf -p --name-only -n 9#CUR'
+ealias gm='git merge --no-ff origin/#CUR'
+ealias gmt='git mergetool'
+ealias gp='git pull'
+ealias gr='git reset'
+ealias gs='git status -s'
+ealias gsh='git show HEAD'
+ealias gst='git stash'
+ealias gsta='git stash apply'
+ealias gt='git tag'
+ealias de='docker exec -i --tty #CUR bash'
+
+ealias pa='ps aux'
+ealias pag='ps aux | grep '
