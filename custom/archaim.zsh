@@ -9,6 +9,11 @@ export EDITOR=/usr/bin/vim
 alias ll='ls -la'
 
 #
+ealias gr='grep '
+ealias grr='grep -R '
+ealias grp='grep -P '
+ealias grpr='grep -PR '
+#
 ealias dps='docker ps'
 ealias dpsa='docker ps -a'
 ealias gP='git push'
