@@ -56,6 +56,7 @@ ealias de='docker exec -i --tty #CUR bash'
 ealias cpu='watch cat /proc/cpuinfo \| grep MHz'
 ealias freq='watch cat /proc/cpuinfo \| grep MHz'
 ealias cpufreq='watch cat /proc/cpuinfo \| grep MHz'
+ealias sl='string-length'
 
 ealias pa='ps aux'
 ealias pag='ps aux | grep '
