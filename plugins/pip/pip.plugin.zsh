@@ -9,7 +9,11 @@
 # If you would like to clear your cache, go ahead and do a
 # "zsh-pip-clear-cache".
 
-ZSH_PIP_CACHE_FILE=~/.pip/zsh-cache
+if [[ -d "${XDG_CACHE_HOME:-$HOME/.cache}/pip" ]]; then
+  ZSH_PIP_CACHE_FILE="${XDG_CACHE_HOME:-$HOME/.cache}/pip/zsh-cache"
+else
+  ZSH_PIP_CACHE_FILE=~/.pip/zsh-cache
+fi
 ZSH_PIP_INDEXES=(https://pypi.org/simple/)
 
 zsh-pip-clear-cache() {
@@ -29,6 +33,7 @@ zsh-pip-cache-packages() {
   if [[ ! -f $ZSH_PIP_CACHE_FILE ]]; then
       echo -n "(...caching package index...)"
       tmp_cache=/tmp/zsh_tmp_cache
+      touch $tmp_cache
       for index in $ZSH_PIP_INDEXES ; do
           # well... I've already got two problems
           curl -L $index 2>/dev/null | \
