@@ -62,5 +62,7 @@ ealias freq='watch cat /proc/cpuinfo \| grep MHz'
 ealias cpufreq='watch cat /proc/cpuinfo \| grep MHz'
 ealias sl='string-length'
 
+ealias rmorig='find . -name \*.orig | xargs rm -rf'
+
 ealias pa='ps aux'
 ealias pag='ps aux | grep '
